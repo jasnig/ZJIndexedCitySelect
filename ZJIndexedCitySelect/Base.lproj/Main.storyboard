@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3sL-Wg-ApZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--类型-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB0-sG-msS">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PYz-cA-AeL"/>
+                                </constraints>
+                                <state key="normal" title="类似tableView方式展示">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tableViewBtnOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieI-CH-l7E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-Vl-eCX">
+                                <rect key="frame" x="0.0" y="109" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="O4j-7L-W0q"/>
+                                </constraints>
+                                <state key="normal" title="类似collectionView方式展示(使用collectionView)">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="collctionViewBtnOneOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHM-8F-Wxe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzK-Q1-A9U">
+                                <rect key="frame" x="0.0" y="154" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tAg-Qf-oxG"/>
+                                </constraints>
+                                <state key="normal" title="类似collectionView方式展示(未使用collectionView)">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="collectionViewTwoOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L53-ar-6GB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aeC-Vl-eCX" firstAttribute="top" secondItem="MB0-sG-msS" secondAttribute="bottom" constant="1" id="AMI-Eg-nuf"/>
+                            <constraint firstAttribute="trailing" secondItem="MB0-sG-msS" secondAttribute="trailing" id="RdL-9m-w3c"/>
+                            <constraint firstItem="gzK-Q1-A9U" firstAttribute="top" secondItem="aeC-Vl-eCX" secondAttribute="bottom" constant="1" id="SYp-W9-6ZL"/>
+                            <constraint firstItem="aeC-Vl-eCX" firstAttribute="leading" secondItem="MB0-sG-msS" secondAttribute="leading" id="VSx-pS-pDd"/>
+                            <constraint firstItem="aeC-Vl-eCX" firstAttribute="trailing" secondItem="MB0-sG-msS" secondAttribute="trailing" id="gxG-PV-XeJ"/>
+                            <constraint firstItem="gzK-Q1-A9U" firstAttribute="trailing" secondItem="MB0-sG-msS" secondAttribute="trailing" id="jL7-G7-sWp"/>
+                            <constraint firstItem="MB0-sG-msS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kQZ-Sf-3ZJ"/>
+                            <constraint firstItem="gzK-Q1-A9U" firstAttribute="leading" secondItem="MB0-sG-msS" secondAttribute="leading" id="n7n-4I-1Fj"/>
+                            <constraint firstItem="MB0-sG-msS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uX2-gA-JAi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="类型" id="SdJ-ym-haf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="389"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Nk-sg-Jzh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3sL-Wg-ApZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MZU-En-cbH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CcQ-lN-Hum"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mS4-l8-DFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="1049"/>
+        </scene>
+    </scenes>
+</document>
